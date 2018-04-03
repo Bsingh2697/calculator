@@ -37,11 +37,15 @@ public class MainActivity extends AppCompatActivity {
         b_equal = (Button) findViewById(R.id.result);
         edit_text = (EditText) findViewById(R.id.show);
 
+    b0.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                edit_text.setText(edit_text.getText().toString() + "0");
+            }
+        });
+        b1.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                edit_text.setText(edit_text.getText().toString() + "1");
+            }
+        });
     }
-
-    zero.setOnClickListener(new View.OnClickListener()
-    {
-        public void onClick (View v){
-        edit_text.setText(edit_text.getText().toString() + "0");
-    }});
 }
